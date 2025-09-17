@@ -3,7 +3,7 @@
 		<div class="card-desc-title">
 			<div class="status-bar">
 				<div class="card-desc-attribute">
-					<div class="card-desc-attr">
+					<div class="card-desc-attr shadow">
 						<svg class="item-icon__logo" aria-label="logo">
 							<use :href="spritesSVG + '#person'" />
 						</svg>
@@ -11,7 +11,7 @@
 							<strong>{{ task.worker }}</strong>
 						</p>
 					</div>
-					<div class="card-desc-attr">
+					<div class="card-desc-attr shadow">
 						<svg class="item-icon__logo" aria-label="logo">
 							<use :href="spritesSVG + '#calendar'" />
 						</svg>
@@ -24,6 +24,7 @@
 				<div class="status">
 					<AppSmallLoader v-if="isLoading" />
 					<AppStatus :type="task.status" :status="task.status" />
+					<button class="close" @click="closeForm">✕</button>
 				</div>
 			</div>
 			<hr />
@@ -83,6 +84,8 @@ export default {
 		const task = computed(
 			() => store.state.tasks.find(i => i.id === props.id) || null
 		)
+
+		const closeForm = () => router.push('/')
 
 		const handleSelectChange = async function (value) {
 			if (!value) return
@@ -158,6 +161,7 @@ export default {
 			removeTask,
 			isLoading,
 			spritesSVG,
+			closeForm,
 		}
 	},
 }

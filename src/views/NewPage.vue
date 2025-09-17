@@ -50,6 +50,15 @@ export default {
 				deadline: formData.value.deadline.trim(),
 				desc: formData.value.desc.trim(),
 				status: 'на распределении',
+				plan: [
+					{ dateTime: '2025-09-17 21:13:58', desc: 'Выполнить задачу № 1' },
+					{ dateTime: '2025-09-17 21:18:58', desc: 'Выполнить задачу № 2' },
+				],
+
+				fact: [
+					{ dateTime: '2025-09-18 08:13:58', desc: 'Задача № 1 выполнена' },
+					{ dateTime: '2025-09-18 08:13:58', desc: 'Задача № 1 выполнена' },
+				],
 			}
 
 			if (

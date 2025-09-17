@@ -47,11 +47,11 @@ export default {
 	padding: 0.2em 0.8em;
 	font-size: 14px;
 	font-weight: 500;
-	border-radius: 0.8rem;
+	border-radius: 6px;
 
 	justify-self: end;
-	box-shadow: 3px 3px 3px rgba(96, 96, 96, 0.5);
-	transition: all 0.4s ease-in-out;
+	box-shadow: 2px 2px 2px rgba(96, 96, 96, 0.5);
+	transition: all 1s ease-in-out;
 }
 
 .primary {

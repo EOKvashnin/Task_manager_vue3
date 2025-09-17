@@ -29,7 +29,7 @@
 								<svg class="item-icon__logo" aria-label="logo">
 									<use :href="spritesSVG + '#person'" />
 								</svg>
-								<p>
+								<p style="padding-top: 1px">
 									<strong>{{ task.worker }}</strong>
 								</p>
 							</div>

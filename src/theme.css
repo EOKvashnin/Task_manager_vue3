@@ -361,7 +361,7 @@ h3 {
 	flex-direction: row;
 	justify-content: start;
 	align-items: center;
-	border-radius: 12px;
+	border-radius: 6px;
 	background-color: #42b983;
 	justify-self: start;
 	color: #fff;
@@ -376,6 +376,29 @@ h3 {
 	justify-content: end;
 	align-items: center;
 	gap: 5px;
+}
+
+.close {
+	padding: 0.2em 0.8em;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 6px;
+	border: none;
+	color: #6c757d;
+
+	box-shadow: 1px 1px 3px rgba(96, 96, 96, 0.5);
+	transition: all 0.2s ease-in-out;
+}
+.close:hover {
+	background-color: #e2e2e2;
+}
+
+.close:active {
+	box-shadow: 0 0 0 rgba(96, 96, 96, 0.5);
+}
+
+.shadow {
+	box-shadow: 2px 2px 3px rgba(96, 96, 96, 0.5);
 }
 
 .list {
@@ -493,6 +516,19 @@ h3 {
 .navbar-menu li a:hover,
 .navbar-menu li a.active {
 	border-bottom: 2px solid #535353;
+}
+
+.footer {
+	padding: 0 2rem;
+	position: fixed;
+	z-index: 21;
+	top: 100;
+	left: 0;
+	right: 0;
+	height: 100px;
+	box-sizing: border-box;
+
+	backdrop-filter: blur(20px);
 }
 
 .badge {
